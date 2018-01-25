@@ -51,7 +51,7 @@ td {
   padding: 2px 2px;
 }
 
-div[shape=rectangle] {
+.drum-pad {
   border: 1px solid #797878;
   width: 40px;
   height: 40px;
@@ -61,10 +61,15 @@ div[shape=rectangle] {
   padding: 5px;
 }
 
-div[shape=circle] {
+div[data-drum-select=true] {
   background-color: #333333;
   width: 20px;
   height: 20px;
   border-radius:25px;
   margin: 10px;
+}
+
+
+div[data-playing=true] {
+  background-color: white;
 }
